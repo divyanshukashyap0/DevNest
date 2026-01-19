@@ -117,4 +117,78 @@ For queries, feedback, or collaboration:
 
 
 ## 📁 Project Structure
+project-marketplace/
+│
+├── frontend/                      # Client-side application
+│   ├── public/                    # Static assets
+│   │   └── favicon.ico
+│   │
+│   ├── src/
+│   │   ├── assets/                # Images, icons, animations
+│   │   ├── components/            # Reusable UI components
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── ProjectCard.jsx
+│   │   │   └── ThemeToggle.jsx
+│   │   │
+│   │   ├── pages/                 # App pages (Next.js or React Router)
+│   │   │   ├── Home.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Signup.jsx
+│   │   │   ├── Marketplace.jsx
+│   │   │   ├── ProjectDetails.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   └── Admin.jsx
+│   │   │
+│   │   ├── context/               # Auth & global state
+│   │   │   └── AuthContext.jsx
+│   │   │
+│   │   ├── services/              # API calls (Axios)
+│   │   │   ├── authService.js
+│   │   │   ├── projectService.js
+│   │   │   └── paymentService.js
+│   │   │
+│   │   ├── utils/                 # Helper functions
+│   │   ├── styles/                # Tailwind & global styles
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   └── package.json
+│
+├── backend/                       # Server-side application
+│   ├── src/
+│   │   ├── config/                # DB, payment, OAuth configs
+│   │   │   ├── db.js
+│   │   │   ├── razorpay.js
+│   │   │   └── oauth.js
+│   │   │
+│   │   ├── models/                # Database schemas
+│   │   │   ├── User.js
+│   │   │   ├── Project.js
+│   │   │   ├── Order.js
+│   │   │   └── Review.js
+│   │   │
+│   │   ├── routes/                # API routes
+│   │   │   ├── auth.routes.js
+│   │   │   ├── project.routes.js
+│   │   │   ├── payment.routes.js
+│   │   │   └── ai.routes.js
+│   │   │
+│   │   ├── controllers/           # Business logic
+│   │   ├── middleware/            # JWT, role-based access
+│   │   ├── services/              # AI, payment logic
+│   │   ├── utils/                 # Helpers & validators
+│   │   └── server.js
+│   │
+│   └── package.json
+│
+├── docs/                          # Documentation & guides
+│   ├── API.md
+│   ├── SETUP.md
+│   └── DATABASE.md
+│
+├── .env.example                   # Environment variables template
+├── .gitignore
+├── README.md
+└── LICENSE
 
